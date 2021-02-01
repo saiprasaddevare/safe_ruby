@@ -29,6 +29,7 @@ MAKE_SAFE_CODE = <<-STRING
   keep_singleton_methods(:Symbol, #{SYMBOL_S_METHODS})
   keep_singleton_methods(:String, #{STRING_S_METHODS})
   keep_singleton_methods(:IO, #{IO_S_METHODS})
+  keep_singleton_methods(:Date, #{DATE_S_METHODS})
 
   keep_methods(:Kernel, #{KERNEL_METHODS})
   keep_methods(:NilClass, #{NILCLASS_METHODS})

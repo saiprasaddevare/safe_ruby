@@ -45,6 +45,10 @@ STRING_S_METHODS = %w[
 new
 ].freeze
 
+DATE_S_METHODS = %w[
+  new
+].freeze
+
 KERNEL_METHODS = %w[
 ==
 
@@ -269,201 +273,201 @@ upto
 []
 []=
 ].freeze
-DATE_METHODS=%w[
-  _load
-  _parse
-  _strptime
-  rfc2822
-  rfc822
-  httpdate
-  xmlschema
-  parse
-  strptime
-  valid_jd?
-  valid_ordinal?
-  valid_civil?
-  ordinal
-  julian_leap?
-  gregorian_leap?
-  leap?
-  valid_date?
-  valid_commercial?
-  beginning_of_week_default
-  find_beginning_of_week!
-  beginning_of_week_default=
-  yesterday
-  iso8601
-  today
-  tomorrow
-  beginning_of_week=
-  beginning_of_week
-  current
-  evolve
-  demongoize
-  mongoize
-  yaml_tag
-  __mongoize_fk__
-  allocate
-  superclass
-  new
-  class_attribute
-  json_creatable?
-  descendants
-  subclasses
-  instance_methods
-  public_instance_methods
-  protected_instance_methods
-  private_instance_methods
-  redefine_method
-  pretty_print
-  parents
-  included_modules
-  include?
-  name
-  ancestors
-  attr
-  attr_reader
-  attr_writer
-  attr_accessor
-  constants
-  const_get
-  const_set
-  const_defined?
-  class_variables
-  remove_class_variable
-  class_variable_get
-  class_variable_set
-  class_variable_defined?
-  public_constant
-  private_constant
-  deprecate_constant
-  singleton_class?
-  delegate_missing_to
-  include
-  <
-  alias_method
-  >
-  private_class_method
-  protected_method_defined?
-  public_method_defined?
-  private_method_defined?
-  instance_method
-  public_class_method
-  autoload?
-  deprecate
-  autoload_without_bootsnap
-  public_instance_method
-  define_method
-  method_visibility
-  autoload
-  anonymous?
-  mattr_accessor
-  pretty_print_cycle
-  <=>
-  <=
-  >=
-  ==
-  ===
-  delegate
-  attr_internal_reader
-  attr_internal_writer
-  attr_internal_accessor
-  attr_internal
-  thread_cattr_reader
-  thread_mattr_reader
-  thread_mattr_accessor
-  remove_possible_method
-  thread_cattr_writer
-  silence_redefinition_of_method
-  redefine_singleton_method
-  thread_cattr_accessor
-  freeze
-  inspect
-  prepend
-  const_missing
-  thread_mattr_writer
-  parent
-  parent_name
-  to_s
-  remove_possible_singleton_method
-  alias_attribute
-  mattr_reader
-  cattr_reader
-  mattr_writer
-  cattr_writer
-  cattr_accessor
-  module_parent_name
-  re_define_method
-  concerning
-  concern
-  guess_for_anonymous
-  unloadable
-  require_dependency
-  to_json
-  instance_values
-  instance_variable_names
-  html_safe?
-  deep_dup
-  dclone
-  blank?
-  acts_like?
-  with_options
-  duplicable?
-  present?
-  presence
-  to_param
-  to_query
-  to_yaml
-  as_json
-  methods
-  singleton_methods
-  protected_methods
-  private_methods
-  in?
-  public_methods
-  presence_in
-  pretty_print_inspect
-  pretty_print_instance_variables
-  regexp?
-  blank_criteria?
-  multi_arged?
-  resizable?
-  do_or_do_not
-  substitutable
-  you_must
-  numeric?
-  to_bson_normalized_value
-  to_bson_key
-  to_bson_normalized_key
-  try
-  try!
-  require_or_load
-  load_dependency
-  instance_of?
-  kind_of?
-  is_a?
-  tap
-  eql?
-  respond_to?
-  ai
-  object_id
-  display
-  nil?
-  hash
-  class
-  singleton_class
-  clone
-  dup
-  itself
-  yield_self
-  then
-  taint
-  tainted?
-  untaint
-  untrust
-  untrusted?
-  trust
-  frozen?
-  equal?
-  !
-  ].freeze
+DATE_METHODS = %w[
+_load
+_parse
+_strptime
+rfc2822
+rfc822
+httpdate
+xmlschema
+parse
+strptime
+valid_jd?
+valid_ordinal?
+valid_civil?
+ordinal
+julian_leap?
+gregorian_leap?
+leap?
+valid_date?
+valid_commercial?
+beginning_of_week_default
+find_beginning_of_week!
+beginning_of_week_default=
+yesterday
+iso8601
+today
+tomorrow
+beginning_of_week=
+beginning_of_week
+current
+evolve
+demongoize
+mongoize
+yaml_tag
+__mongoize_fk__
+allocate
+superclass
+new
+class_attribute
+json_creatable?
+descendants
+subclasses
+instance_methods
+public_instance_methods
+protected_instance_methods
+private_instance_methods
+redefine_method
+pretty_print
+parents
+included_modules
+include?
+name
+ancestors
+attr
+attr_reader
+attr_writer
+attr_accessor
+constants
+const_get
+const_set
+const_defined?
+class_variables
+remove_class_variable
+class_variable_get
+class_variable_set
+class_variable_defined?
+public_constant
+private_constant
+deprecate_constant
+singleton_class?
+delegate_missing_to
+include
+<
+alias_method
+>
+private_class_method
+protected_method_defined?
+public_method_defined?
+private_method_defined?
+instance_method
+public_class_method
+autoload?
+deprecate
+autoload_without_bootsnap
+public_instance_method
+define_method
+method_visibility
+autoload
+anonymous?
+mattr_accessor
+pretty_print_cycle
+<=>
+<=
+>=
+==
+===
+delegate
+attr_internal_reader
+attr_internal_writer
+attr_internal_accessor
+attr_internal
+thread_cattr_reader
+thread_mattr_reader
+thread_mattr_accessor
+remove_possible_method
+thread_cattr_writer
+silence_redefinition_of_method
+redefine_singleton_method
+thread_cattr_accessor
+freeze
+inspect
+prepend
+const_missing
+thread_mattr_writer
+parent
+parent_name
+to_s
+remove_possible_singleton_method
+alias_attribute
+mattr_reader
+cattr_reader
+mattr_writer
+cattr_writer
+cattr_accessor
+module_parent_name
+re_define_method
+concerning
+concern
+guess_for_anonymous
+unloadable
+require_dependency
+to_json
+instance_values
+instance_variable_names
+html_safe?
+deep_dup
+dclone
+blank?
+acts_like?
+with_options
+duplicable?
+present?
+presence
+to_param
+to_query
+to_yaml
+as_json
+methods
+singleton_methods
+protected_methods
+private_methods
+in?
+public_methods
+presence_in
+pretty_print_inspect
+pretty_print_instance_variables
+regexp?
+blank_criteria?
+multi_arged?
+resizable?
+do_or_do_not
+substitutable
+you_must
+numeric?
+to_bson_normalized_value
+to_bson_key
+to_bson_normalized_key
+try
+try!
+require_or_load
+load_dependency
+instance_of?
+kind_of?
+is_a?
+tap
+eql?
+respond_to?
+ai
+object_id
+display
+nil?
+hash
+class
+singleton_class
+clone
+dup
+itself
+yield_self
+then
+taint
+tainted?
+untaint
+untrust
+untrusted?
+trust
+frozen?
+equal?
+!
+].freeze
