@@ -46,7 +46,7 @@ new
 ].freeze
 
 DATE_S_METHODS = %w[
-  new
+new
 ].freeze
 
 KERNEL_METHODS = %w[
@@ -273,10 +273,8 @@ upto
 []
 []=
 ].freeze
+
 DATE_METHODS = %w[
-_load
-_parse
-_strptime
 rfc2822
 rfc822
 httpdate
