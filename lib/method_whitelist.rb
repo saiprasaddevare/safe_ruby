@@ -311,7 +311,6 @@ DATE_METHODS = %w[
   _xmlschema
   _rfc2822
   _rfc822
-  _httpdate
   _jisx0301
   jisx0301
   find_beginning_of_week!
