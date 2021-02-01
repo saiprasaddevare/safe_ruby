@@ -31,7 +31,7 @@ keep_singleton_methods(:Kernel, #{KERNEL_S_METHODS})
 keep_singleton_methods(:Symbol, #{SYMBOL_S_METHODS})
 keep_singleton_methods(:String, #{STRING_S_METHODS})
 keep_singleton_methods(:IO, #{IO_S_METHODS})
-keep_singleton_methods(:Date, #{DATE_S_METHODS})
+keep_singleton_methods(:Date, #{DATE_METHODS})
 
 keep_methods(:Kernel, #{KERNEL_METHODS})
 keep_methods(:NilClass, #{NILCLASS_METHODS})
@@ -39,7 +39,7 @@ keep_methods(:TrueClass, #{TRUECLASS_METHODS})
 keep_methods(:FalseClass, #{FALSECLASS_METHODS})
 keep_methods(:Enumerable, #{ENUMERABLE_METHODS})
 keep_methods(:String, #{STRING_METHODS})
-keep_methods(:Date, #{DATE_METHODS})
+keep_methods(:Date, #{DATE_S_METHODS})
 
 Kernel.class_eval do
 def `(*args)
