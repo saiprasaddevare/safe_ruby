@@ -275,7 +275,6 @@ upto
 ].freeze
 
 DATE_METHODS = %w[
-  _load
   beginning_of_week_default
   iso8601
   current
@@ -284,8 +283,6 @@ DATE_METHODS = %w[
   beginning_of_week=
   beginning_of_week
   tomorrow
-  _parse
-  _strptime
   parse
   rfc2822
   rfc822
@@ -303,15 +300,9 @@ DATE_METHODS = %w[
   civil
   leap?
   commercial
-  _iso8601
   today
   rfc3339
-  _rfc3339
   strptime
-  _xmlschema
-  _rfc2822
-  _rfc822
-  _jisx0301
   jisx0301
   find_beginning_of_week!
 ].freeze
