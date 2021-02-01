@@ -275,34 +275,36 @@ upto
 ].freeze
 
 DATE_METHODS = %w[
-  beginning_of_week_default
-  iso8601
-  current
-  beginning_of_week_default=
-  yesterday
-  beginning_of_week=
-  beginning_of_week
-  tomorrow
-  parse
-  rfc2822
-  rfc822
-  httpdate
-  xmlschema
+  _load
   valid_jd?
+  parse
   valid_ordinal?
   valid_civil?
   valid_date?
-  ordinal
   valid_commercial?
   julian_leap?
   gregorian_leap?
-  jd
-  civil
   leap?
+  jd
+  ordinal
   commercial
-  today
-  rfc3339
+  _strptime
   strptime
+  _parse
+  _iso8601
+  iso8601
+  _rfc3339
+  rfc3339
+  _xmlschema
+  civil
+  xmlschema
+  _rfc2822
+  _rfc822
+  rfc2822
+  rfc822
+  _httpdate
+  httpdate
+  _jisx0301
   jisx0301
-  find_beginning_of_week!
+  today
 ].freeze
